@@ -1,7 +1,7 @@
 Installing this Boilerplate Wordpress Box
 =========================================
 
-1. Clone the repo `git clone git@github.com:ggoforth/wp-boilerplate wordpress`
+1. Clone the repo `git clone git@github.com:vanie3/new-sierra.git`
 2. Create the wp-config.php file (copy the wp-config.sample.php)
 3. Database creds:
     * Database: `wordpress`
