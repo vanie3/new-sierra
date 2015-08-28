@@ -1,5 +1,19 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+                <div class="row">
+                    <div class="col-md-3">
+                        <?php my_wp_nav_menu_args('footer-menu'); ?>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
 
 				<!-- copyright -->
 				<p class="copyright">

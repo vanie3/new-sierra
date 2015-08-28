@@ -100,6 +100,9 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
+        wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '4.0.0', true ); //Bootstrap
+        wp_enqueue_script('bootstrap-js'); // Enqueue it!
     }
 }
 
@@ -120,6 +123,9 @@ function html5blank_styles()
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', array(), '4.0.0', 'all' );
+    wp_enqueue_style('bootstrap-css'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -128,7 +134,8 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'extra-menu' => __('Extra Menu', 'html5blank'), // Extra Navigation if needed (duplicate as many as you need!)
+        'footer-menu' => __('Footer Menu', 'html5blank') //Footer Navigation
     ));
 }
 
