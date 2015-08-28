@@ -75,10 +75,7 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
+
 }
 /* header */
 .header {
@@ -101,14 +98,112 @@ input:focus {
 }
 /* footer */
 .footer {
-
+	background-color: #ffffff;
+	min-height: 208px;
+	width: 100%;
 }
 
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
 
+/*
+====================================================Home Page Styles====================================================
+*/
 
+.home-bg-c {
+	/*background-color: #176B87;*/
+	background-color: #5AA1B6;
+	min-height: 1726px;
+}
+
+.home-bg-img {
+	/*background-color: #5AA1B6;*/
+	background: url(img/background.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	min-height: 1370px;
+}
+
+.home-container {
+	/*background-color: #176B87;*/
+}
+
+main .mid-page {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.big-box {
+	width: 400px;
+	height: 400px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+.big-box .row-boxes {
+	margin: 0;
+	padding: 0;
+}
+
+.boxes {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.one {
+	background-color: #4C9FA4;
+}
+.two {
+	background-color: #557A62;
+}
+.three {
+	background-color: #1A3D61;
+}
+.four {
+	background-color: #1C7995;
+}
+
+.mid-copy {
+	/*position: relative;*/
+	/*top: 200px;*/
+	padding-top: 300px;
+}
+
+.mid-copy p span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.mid-copy p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.mid-copy button {
+	position: relative;
+	left: 980px;
+	background-color: #042047;
+	color: white;
+	border: none;
+}
+
+.testimonials {
+	position: relative;
+	top: 150px;
+	background-color: #DDE9DD;
+}
+
+.testimonials p {
+	font-size: 20px;
+}
 
 /*------------------------------------*\
     IMAGES
