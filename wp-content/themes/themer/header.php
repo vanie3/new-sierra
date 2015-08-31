@@ -26,10 +26,12 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="wrapper container">
 
 			<!-- header -->
 			<header class="header clear" role="banner">
+
+                <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 
 					<!-- logo -->
 					<div class="logo">

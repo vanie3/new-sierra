@@ -2,7 +2,7 @@
 
     <main role="main">
         <!-- section -->
-        <section class="col-md-10">
+        <section class="col-md-10 container">
 
             <h1><?php the_title(); ?></h1>
 
@@ -38,7 +38,7 @@
         <!-- /section -->
 
         <aside class="col-md-2">
-            <?php dynamic_sidebar('widget-area-2'); ?>
+            <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('about-sidebar')) ?>
         </aside>
     </main>
 

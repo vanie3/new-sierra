@@ -183,7 +183,7 @@ main .mid-page {
 .mid-copy p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 25px;
-	color: #ffffff;
+	/*color: #ffffff;*/
 	text-align: justify;
 }
 

@@ -1,30 +1,10 @@
 <?php get_header(); ?>
 
 			<main role="main">
-
-				<div class="container mid-page">
-					<div class="big-box">
-						<div class="row row-boxes">
-							<div class="boxes one"></div>
-							<div class="boxes two"></div>
-						</div>
-						<div class="row row-boxes">
-							<div class="boxes three"></div>
-							<div class="boxes four"></div>
-						</div>
-					</div>
-
-					<div class="mid-copy">
-						<p><span>Fact:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, debitis deleniti earum enim explicabo ipsa iste itaque maiores officiis, pariatur perspiciatis quis sed, vitae voluptatibus. Dolorum nulla reiciendis repellendus!</p>
-
-						<button class="learn-button">Learn More</button>
-					</div>
-				</div>
-
 				<!-- section -->
-				<section class="container testimonials">
+				<section class="container">
 
-					<h1><?php the_title(); ?></h1>
+					<h1><?php the_title( ); ?></h1>
 
 					<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
