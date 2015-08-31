@@ -149,6 +149,10 @@ main .mid-page {
 	padding: 0;
 }
 
+.big-box a {
+    color: #fff;
+}
+
 .boxes {
 	float: left;
 	width: 200px;

@@ -2,15 +2,35 @@
 
 			<main role="main container">
 
+
+<!--			get_permalink ( $id = 4)-->
+
+
 				<div class="container mid-page">
 					<div class="big-box">
 						<div class="row row-boxes">
-							<div class="boxes one"></div>
-							<div class="boxes two"></div>
+							<div class="boxes one">
+							    <a href="<?php echo esc_url( get_permalink(41) ); ?>">
+							        <?php esc_html_e( 'HR Compliance', 'textdomain' ); ?>
+                                </a>
+                            </div>
+							<div class="boxes two">
+							    <a href="<?php echo esc_url( get_permalink(45) ); ?>">
+							        <?php esc_html_e( 'Background Investigations', 'textdomain' ); ?>
+                                </a>
+                            </div>
 						</div>
 						<div class="row row-boxes">
-							<div class="boxes three"></div>
-							<div class="boxes four"></div>
+							<div class="boxes three">
+							    <a href="<?php echo esc_url( get_permalink(43) ); ?>">
+							        <?php esc_html_e( 'Recruitment & Screening', 'textdomain' ); ?>
+                                </a>
+                            </div>
+							<div class="boxes four">
+							    <a href="<?php echo esc_url( get_permalink(47) ); ?>">
+							        <?php esc_html_e( 'Training & Workshops', 'textdomain' ); ?>
+                                </a>
+                            </div>
 						</div>
 					</div>
 
