@@ -184,10 +184,10 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 1', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_widget' => '<ul id="%1$s" class="%2$s">',
+        'after_widget' => '</ul>',
+        'before_title' => '<li>',
+        'after_title' => '</li>'
     ));
 
     // Define Sidebar Widget Area 2
@@ -195,6 +195,47 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 2', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    //FOOTER COLUMNS
+    register_sidebar(array(
+        'name' => __('Left Footer Widget', 'html5blank'),
+        'description' => __('This is the left footer widget', 'html5blank'),
+        'id' => 'left-footer',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => __('Middle Left Footer Widget', 'html5blank'),
+        'description' => __('This is the middle left footer widget', 'html5blank'),
+        'id' => 'middle-left-footer',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => __('Middle Right Footer Widget', 'html5blank'),
+        'description' => __('This is the middle right footer widget', 'html5blank'),
+        'id' => 'middle-right-footer',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+        'name' => __('Right Footer Widget', 'html5blank'),
+        'description' => __('This is the right footer widget', 'html5blank'),
+        'id' => 'right-footer',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

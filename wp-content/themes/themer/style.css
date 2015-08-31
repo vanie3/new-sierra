@@ -197,7 +197,8 @@ main .mid-page {
 
 .testimonials {
 	position: relative;
-	top: 150px;
+    top: 0px;
+	/*top: 150px;*/
 	background-color: #DDE9DD;
 }
 

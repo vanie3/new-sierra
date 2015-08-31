@@ -2,23 +2,22 @@
 			<footer class="footer" role="contentinfo">
                 <div class="row">
                     <div class="col-md-3">
-                        <?php my_wp_nav_menu_args('footer-menu'); ?>
+                        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>
                     </div>
                     <div class="col-md-3">
-
+                        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-left-footer')) ?>
                     </div>
                     <div class="col-md-3">
-
+                        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-right-footer')) ?>
                     </div>
                     <div class="col-md-3">
-
+                        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('right-footer')) ?>
                     </div>
                 </div>
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
 				</p>
 				<!-- /copyright -->
 
