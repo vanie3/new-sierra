@@ -17,6 +17,24 @@
 
                     <?php edit_post_link(); ?>
 
+                    <div class="row">
+
+                        <?php
+
+                        $key_values = get_post_custom_values( 'wpcf-column-title' );
+                        foreach ( $key_values as $key => $value ) {
+                            echo "<div class='col-sm-4'><b> $value </b></div>";
+                        }
+
+                        $mykey_values = get_post_custom_values( 'wpcf-column' );
+                        foreach ( $mykey_values as $key => $value ) {
+                            echo "<div class='col-sm-4'> $value </div>";
+                        }
+
+                        ?>
+
+                    </div>
+
                 </article>
                 <!-- /article -->
 
