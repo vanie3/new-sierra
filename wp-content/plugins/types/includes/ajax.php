@@ -123,6 +123,7 @@ function wpcf_ajax()
             );
             die;
         }
+        break;
         /**
          * do not check actions from other places
          */

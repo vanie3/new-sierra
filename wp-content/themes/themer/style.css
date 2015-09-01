@@ -69,6 +69,14 @@ input:focus {
 	border:1px solid #04A4CC;
 }
 
+input[type="text"]{
+    height: 20px;
+    width: 100%;
+    margin-bottom: 3px;
+    border: 2px solid #80b6c3;
+    border-radius: 1px;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/

@@ -66,6 +66,9 @@
 							<?php the_content(); ?>
 
 							<!--				--><?php //comments_template( '', true ); // Remove if you don't want comments ?>
+                            <?php echo types_render_field("author", array("output"=>"html")); ?>
+
+                            <?php echo types_render_field("job-title", array("output"=>"html")); ?>
 
 							<br class="clear">
 
