@@ -28,6 +28,7 @@
 /* html element 62.5% font-size for REM use */
 html {
 	font-size:62.5%;
+    height: 100%;
 }
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -110,14 +111,15 @@ form.search{
 
 form.search .fa-search {
     position: absolute;
-    top: 6px;
-    left: 6px;
+    top: 8px;
+    left: 8px;
 }
 
 form.search input{
     border: 2px solid grey;
     border-radius: 2px;
     text-indent: 20px;
+    height: 26px;
 }
 
 form button.search-submit{
@@ -170,19 +172,25 @@ form button.search-submit{
     border-right: none;
 }
 
-footer .widgets ul.menu-left-footer-nav{
-    text-decoration:none;
-}
+/*footer .widgets ul.menu-left-footer-nav{*/
+    /*text-decoration:none;*/
+/*}*/
 
 /* sidebar */
 .sidebar {
 
 }
 /* footer */
-.footer {
+.footer.footer-home{
 	background-color: #ffffff;
 	min-height: 208px;
 	width: 100%;
+}
+
+.footer.footer-about{
+    background-color: #e6eee4;
+    min-height: 208px;
+    width: 100%;
 }
 
 footer.footer {
@@ -190,7 +198,15 @@ footer.footer {
     /*margin-top: 344px;*/
 }
 
-footer .row p{
+/*footer .row p{*/
+    /*position: absolute;*/
+    /*height: 200px;*/
+    /*bottom: 0px;*/
+    /*right: 0px;*/
+    /*left: 0px;*/
+/*}*/
+
+footer.footer-about .row p{
     position: absolute;
     height: 200px;
     bottom: 0px;
@@ -218,6 +234,7 @@ footer button.signup-submit {
 
 .textwidget {
     font-size: 16px;
+    font-weight: 400;
 }
 
 ul#menu-left-footer-nav, ul#menu-right-footer-nav {
@@ -227,6 +244,12 @@ ul#menu-left-footer-nav, ul#menu-right-footer-nav {
 
 ul#menu-left-footer-nav li, ul#menu-right-footer-nav li{
     list-style-type: none;
+    padding: 0px;
+}
+
+ul#menu-left-footer-nav li a, ul#menu-right-footer-nav li a{
+    list-style-type: none;
+    font-weight: 400;
     padding: 0px;
 }
 
@@ -268,10 +291,64 @@ main{
     position: relative;
 }
 
+main.main-about {
+    margin-top: 218px;
+}
+
+main.main-about h1{
+    color: #506c43;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 44px;
+}
+main.main-about article .about-content{
+    /*color: #061f48;*/
+    /*font-family: 'PT Sans', sans-serif;*/
+    /*font-size: 26px;*/
+    margin-bottom: 55px;
+}
+
+main.main-about article p{
+    color: #061f48;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 26px;
+}
+
 main .mid-page {
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 75px;
+}
+
+main.main-about article .column-title{
+    color: #6c9cac;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+main.main-about article .column-content{
+    color: #061f48;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+aside.aside-about h3{
+    color: #03306f;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 36px;
+}
+
+aside.aside-about ul li a{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #03306f;
+}
+
+aside.aside-about ul {
+    color: #4c8f87;
 }
 
 .big-box {
