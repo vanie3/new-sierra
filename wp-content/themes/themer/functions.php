@@ -79,7 +79,7 @@ function html5blank_nav()
 		'before'          => '',
 		'after'           => '',
 		'link_before'     => '',
-		'link_after'      => '',
+		'link_after'      => '<span class="my-span">|</span>',
 		'items_wrap'      => '<ul>%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
@@ -121,17 +121,23 @@ function html5blank_styles()
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
-
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', array(), '4.0.0', 'all' );
     wp_enqueue_style('bootstrap-css'); // Enqueue it!
 
     wp_register_style('wpb-googleFonts', 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
     wp_enqueue_style('wpb-googleFonts');
 
+    wp_register_style('lato-regular', 'https://fonts.googleapis.com/css?family=Lato');
+    wp_enqueue_style('lato-regular');
+
+    wp_register_style('playfair-display', 'https://fonts.googleapis.com/css?family=Playfair+Display');
+    wp_enqueue_style('playfair-display');
+
     wp_register_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
     wp_enqueue_style('font-awesome');
+
+    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

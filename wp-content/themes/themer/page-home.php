@@ -40,11 +40,11 @@
                                 $args = array( 'post_type' => 'fact');
                                 $loop = new WP_Query( $args );
                                 while ( $loop->have_posts() ) : $loop->the_post();
-                                    echo '<p>';
+                                    echo '<span class="facts"><span class="facts-title"> ';
                                     the_title();
-                                    echo ': ';
+                                    echo ': </span>';
                                     echo wp_trim_words( get_the_content(), 48, '...' );
-                                    echo '</p><br>';
+                                    echo '</span><br>';
                                     echo '<button><a href="';
                                     the_permalink();
                                     echo '" rel="bookmark">Learn More</a></button>';
@@ -66,9 +66,12 @@
 							<?php the_content(); ?>
 
 							<!--				--><?php //comments_template( '', true ); // Remove if you don't want comments ?>
-                            <?php echo types_render_field("author", array("output"=>"html")); ?>
 
-                            <?php echo types_render_field("job-title", array("output"=>"html")); ?>
+                            <div class="testimonial-info">
+                                <?php echo types_render_field("author", array("output"=>"html")); ?>
+
+                                <?php echo types_render_field("job-title", array("output"=>"html")); ?>
+                            </div>
 
 							<br class="clear">
 

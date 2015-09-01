@@ -1,22 +1,22 @@
 			<!-- footer -->
-			<footer class="footer container" role="contentinfo">
-                <div class="row">
-                    <div class="col-md-3">
+			<footer class="footer" role="contentinfo">
+                <div class="row widgets container">
+                    <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-left-footer')) ?>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-right-footer')) ?>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('right-footer')) ?>
                     </div>
                 </div>
 
 				<!-- copyright -->
-				<p class="copyright">
+				<p class="copyright container">
 					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
 				</p>
 				<!-- /copyright -->
