@@ -129,6 +129,9 @@ function html5blank_styles()
 
     wp_register_style('wpb-googleFonts', 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
     wp_enqueue_style('wpb-googleFonts');
+
+    wp_register_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+    wp_enqueue_style('font-awesome');
 }
 
 // Register HTML5 Blank Navigation

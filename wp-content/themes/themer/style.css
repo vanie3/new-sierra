@@ -96,6 +96,32 @@ input[type="text"]{
 .logo-img {
 
 }
+/* searchbar */
+form.search{
+    position: relative;
+    float: right;
+}
+
+form.search .fa-search {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+form.search input{
+    border: 2px solid grey;
+    border-radius: 2px;
+    text-indent: 20px;
+}
+
+form button.search-submit{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid grey;
+    border-radius: 2px;
+    height: 26px;
+}
+
 /* nav */
 .nav {
 
