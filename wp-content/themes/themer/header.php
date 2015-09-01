@@ -48,7 +48,7 @@
 					<!-- /logo -->
 
 					<!-- nav -->
-					<nav class="nav" role="navigation">
+					<nav class="nav" role="navigation" id="navmenu">
 
                         <?php
                         $args = array(
