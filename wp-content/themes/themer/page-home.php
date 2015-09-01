@@ -7,7 +7,7 @@
 
 
 				<div class="container mid-page">
-					<div class="big-box">
+					<div class="big-box text-center">
 						<div class="row row-boxes">
 							<div class="boxes one">
 							    <a href="<?php echo esc_url( get_permalink(41) ); ?>">
@@ -37,19 +37,19 @@
 					<div class="mid-copy">
 					    <div class="entry-content">
                             <?php
-
-                            $args = array( 'post_type' => 'fact');
-                            $loop = new WP_Query( $args );
-                            while ( $loop->have_posts() ) : $loop->the_post();
-                                the_title();
-                                echo '<p>';
-                                echo wp_trim_words( get_the_content(), 48, '...' );
-                                echo '</p>';
-                                echo '<button><a href="';
-                                the_permalink();
-                                echo '" rel="bookmark">Learn More</a></button>';
-                            endwhile;
-
+                                $args = array( 'post_type' => 'fact');
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post();
+                                    echo '<p>';
+                                    the_title();
+                                    echo ': ';
+                                    echo wp_trim_words( get_the_content(), 48, '...' );
+                                    echo '</p><br>';
+                                    echo '<button><a href="';
+                                    the_permalink();
+                                    echo '" rel="bookmark">Learn More</a></button>';
+                                    echo '<br>';
+                                endwhile;
                             ?>
                         </div>
 					</div>
