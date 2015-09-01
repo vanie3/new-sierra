@@ -599,7 +599,7 @@ a img.aligncenter {
 
 body.home {
     font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color:#444;
+    /*color:#444;*/
     background-image: url('img/home.png');
     background-repeat: no-repeat;
     /*background-size: cover;*/
@@ -607,7 +607,7 @@ body.home {
 
 body.about-us {
     font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color:#444;
+    /*color:#444;*/
     background-image: url('img/about.jpg');
     background-repeat: no-repeat;
     /*background-size: cover;*/
