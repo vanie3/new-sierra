@@ -138,9 +138,9 @@ main .mid-page {
 }
 
 .big-box {
-	width: 493px;
-	height: 403px;
-	/*background-color: black;*/
+	width: 400px;
+	height: 400px;
+	background-color: black;
 	margin: 0 auto;
 }
 
@@ -153,40 +153,26 @@ main .mid-page {
     color: #fff;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-transform: uppercase;
-    /*font-weight: 600;*/
-    font-size: 3.1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 42px;
+    font-weight: 900;
 }
 
 .boxes {
 	float: left;
-	width: 245px;
+	width: 200px;
 	height: 200px;
 }
 
 .one {
 	background-color: #4C9FA4;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    position: relative;
 }
 .two {
 	background-color: #557A62;
-    margin-bottom: 3px;
-    position: relative;
 }
 .three {
 	background-color: #1A3D61;
-    margin-right: 3px;
-    position: relative;
 }
 .four {
 	background-color: #1C7995;
-    position: relative;
 }
 
 .mid-copy {
