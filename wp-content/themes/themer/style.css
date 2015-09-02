@@ -91,6 +91,10 @@ input[type="text"]{
 
 }
 
+.header #search-3 a{
+    /*float: right;*/
+}
+
 header.header {
     margin-top: 10px;
 }
@@ -181,41 +185,27 @@ form button.search-submit{
 
 }
 /* footer */
-.footer.footer-home{
-	background-color: #ffffff;
-	min-height: 208px;
-	width: 100%;
-}
-
-.footer.footer-about{
-    background-color: #e6eee4;
-    min-height: 208px;
-    width: 100%;
-}
 
 footer.footer {
     margin-top: 85px;
     /*margin-top: 344px;*/
 }
 
-/*footer .row p{*/
-    /*position: absolute;*/
-    /*height: 200px;*/
-    /*bottom: 0px;*/
-    /*right: 0px;*/
-    /*left: 0px;*/
-/*}*/
-
-footer.footer-about .row p{
-    position: absolute;
-    height: 200px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+footer.footer.footer-home{
+	background-color: #ffffff;
+	min-height: 208px;
+	width: 100%;
 }
 
-p.copyright.container {
-    font-weight: bold;
+footer.footer.footer-about{
+    background-color: #e6eee4;
+    min-height: 208px;
+    width: 100%;
+}
+
+footer.footer .textwidget {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 footer .row.widgets {
@@ -232,24 +222,26 @@ footer button.signup-submit {
     border: none;
 }
 
-.textwidget {
-    font-size: 16px;
-    font-weight: 400;
+footer.footer p.copyright.container {
+    font-weight: bold;
 }
 
-ul#menu-left-footer-nav, ul#menu-right-footer-nav {
+ul#menu-left-footer-nav,
+ul#menu-right-footer-nav {
     font-size: 14px;
     padding: 0px;
 }
 
-ul#menu-left-footer-nav li, ul#menu-right-footer-nav li{
+ul#menu-left-footer-nav li,
+ul#menu-right-footer-nav li{
     list-style-type: none;
     padding: 0px;
 }
 
-ul#menu-left-footer-nav li a, ul#menu-right-footer-nav li a{
-    list-style-type: none;
+ul#menu-left-footer-nav li a,
+ul#menu-right-footer-nav li a{
     font-weight: 400;
+    font-size: 14px;
     padding: 0px;
 }
 

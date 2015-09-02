@@ -33,6 +33,8 @@
 
                 <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 
+                <a href="">Client Login</a>
+
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
