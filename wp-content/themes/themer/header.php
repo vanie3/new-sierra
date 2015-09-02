@@ -25,8 +25,19 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+
+
 		<!-- wrapper -->
-		<div class="wrapper container">
+        <?php
+
+        if(is_page(4)){
+            echo '<div class="wrapper wrapper-home">';
+        } else if(is_page(6)){
+            echo '<div class="wrapper wrapper-about">';
+        }
+
+        ?>
+            <div class="container">
 
 			<!-- header -->
 			<header class="header clear" role="banner">
@@ -35,23 +46,24 @@
 
                 <a href="">Client Login</a>
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/sierrahr_logo.png" alt="Logo" class="logo-img">
-						</a>
-<!--                        <h1>-->
-<!--                            <a href="--><?php //echo get_option('home'); ?><!--">-->
-<!--                                --><?php //bloginfo('name'); ?>
-<!--                            </a>-->
-<!--                        </h1>-->
-					</div>
-					<!-- /logo -->
-
 					<!-- nav -->
-					<nav class="nav" role="navigation" id="navmenu">
 
+
+                <nav class="nav navbar navbar-default" id="navmenu" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo">
+                            <a style="max-width:100px; margin-top: -7px;" class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/sierrahr_logo.png" alt="Logo" class="logo-img"></a>
+                        </div>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <?php
                         $args = array(
                             'theme_location' => 'header-menu'
@@ -59,9 +71,8 @@
                         ?>
 
                         <?php wp_nav_menu($args)?>
-
-					</nav>
-					<!-- /nav -->
+                    </div>
+                </nav>
 
 			</header>
 			<!-- /header -->

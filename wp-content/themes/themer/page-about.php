@@ -61,7 +61,8 @@
         </aside>
     </main>
 
-</div>
+    </div><!-- container -->
+</div><!-- wrapper -->
 
 
 

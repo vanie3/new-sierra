@@ -1,6 +1,6 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
-			<main role="main container">
+			<main role="main">
 
 
 <!--			get_permalink ( $id = 4)-->
@@ -100,7 +100,7 @@
 
 			<?php //get_sidebar(); ?>
 
-		</div>
-	</div>
-</div>
+		</div><!-- container -->
+	</div><!-- wrapper -->
+<!--</div>-->
 <?php get_footer(); ?>
