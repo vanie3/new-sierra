@@ -52,11 +52,11 @@ Main components
   padding-top: 8px;
   margin-left: -25px;
   /*background: rgba(32, 32, 34, 0.9);*/
-  font-family: "Georgia", serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*color: #ffffff;*/
   /*font-size: 70px;*/
   /*font-size: 4.375rem;*/
-  text-align: center;
+  text-align: justify;
   /* visible on big devices only */
   display: none;
 }
@@ -69,8 +69,24 @@ Main components
 
 .cd-testimonials {
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
 }
+
+.cd-testimonials button {
+  /*position: relative;*/
+  /*left: 970px;*/
+  float: right;
+  background-color: #042047;
+  color: white;
+  border: none;
+}
+
+.cd-testimonials button a{
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+}
+
 .cd-testimonials::after {
   clear: both;
   content: "";
@@ -85,8 +101,7 @@ Main components
   opacity: 1;
 }
 .cd-testimonials p {
-  font-family: "Georgia", serif;
-  font-style: italic;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   margin-bottom: 1em;
   padding: 0 14px;
