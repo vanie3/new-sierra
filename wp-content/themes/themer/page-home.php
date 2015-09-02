@@ -34,25 +34,49 @@
 						</div>
 					</div>
 
-					<div class="mid-copy">
-					    <div class="entry-content">
-                            <?php
+					<div class="slider mid-copy">
+						<div class="cd-testimonials-wrapper cd-container">
+							<ul class="cd-testimonials">
+<!--								foreach post create li and put post inside it-->
+								<?php
                                 $args = array( 'post_type' => 'fact');
                                 $loop = new WP_Query( $args );
                                 while ( $loop->have_posts() ) : $loop->the_post();
-                                    echo '<span class="facts"><span class="facts-title"> ';
+                                    echo '<li><p class="fact-text"><span class="facts-title"> ';
                                     the_title();
                                     echo ': </span>';
                                     echo wp_trim_words( get_the_content(), 48, '...' );
-                                    echo '</span><br>';
+                                    echo '</p>';
                                     echo '<button><a href="';
                                     the_permalink();
                                     echo '" rel="bookmark">Learn More</a></button>';
-                                    echo '<br>';
+                                    echo '</li>';
                                 endwhile;
-                            ?>
-                        </div>
+                            	?>
+							</ul> <!-- cd-testimonials -->
+
+						</div> <!-- cd-testimonials-wrapper -->
 					</div>
+
+<!--					<div class="mid-copy">-->
+<!--					    <div class="entry-content">-->
+<!--                            --><?php
+//                                $args = array( 'post_type' => 'fact');
+//                                $loop = new WP_Query( $args );
+//                                while ( $loop->have_posts() ) : $loop->the_post();
+//                                    echo '<span class="facts"><span class="facts-title"> ';
+//                                    the_title();
+//                                    echo ': </span>';
+//                                    echo wp_trim_words( get_the_content(), 48, '...' );
+//                                    echo '</span><br>';
+//                                    echo '<button><a href="';
+//                                    the_permalink();
+//                                    echo '" rel="bookmark">Learn More</a></button>';
+//                                    echo '<br>';
+//                                endwhile;
+//                            ?>
+<!--                        </div>-->
+<!--					</div>-->
 				</div>
 
 				<!-- section -->
