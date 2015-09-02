@@ -59,7 +59,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                            <a style="max-width:100px; margin-top: -7px;" class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/sierrahr_logo.png" alt="Logo" class="logo-img"></a>
+                            <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/sierrahr_logo.png" alt="Logo" class="logo-img"></a>
                         </div>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
