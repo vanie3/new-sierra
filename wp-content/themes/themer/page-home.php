@@ -46,11 +46,10 @@
                                     the_title();
                                     echo ': </span>';
                                     echo wp_trim_words( get_the_content(), 48, '...' );
-                                    echo '</span><br>';
                                     echo '<button><a href="';
                                     the_permalink();
                                     echo '" rel="bookmark">Learn More</a></button>';
-                                    echo '<br>';
+                                    echo '</li>';
                                 endwhile;
                             	?>
 							</ul> <!-- cd-testimonials -->
