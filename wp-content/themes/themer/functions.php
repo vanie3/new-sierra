@@ -142,6 +142,9 @@ function html5blank_styles()
     wp_register_style('playfair-display', 'https://fonts.googleapis.com/css?family=Playfair+Display');
     wp_enqueue_style('playfair-display');
 
+    wp_register_style('pt-sans', 'https://fonts.googleapis.com/css?family=PT+Sans');
+    wp_enqueue_style('pt-sans');
+
     wp_register_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
     wp_enqueue_style('font-awesome');
 

@@ -1,5 +1,16 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+            <?php
+
+                if(is_page(4)){
+                    echo '<footer class="footer footer-home" role="contentinfo">';
+                } else if(is_page(6)){
+                    echo '<footer class="footer footer-about" role="contentinfo">';
+                }
+
+            ?>
+
+
+<!--			<footer class="footer" role="contentinfo">-->
                 <div class="row widgets container">
                     <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>
@@ -24,7 +35,7 @@
 			</footer>
 			<!-- /footer -->
 
-		</div>
+<!--		</div>-->
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>

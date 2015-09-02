@@ -1,8 +1,8 @@
 <?php /* Template Name: About Page */ get_header(); ?>
 
-    <main role="main">
+    <main role="main" class="main-about">
         <!-- section -->
-        <section class="col-md-10 container">
+        <section class="col-md-9 container">
 
             <h1><?php the_title(); ?></h1>
 
@@ -10,12 +10,13 @@
 
                 <!-- article -->
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div class="about-content">
+                        <?php the_content(); ?>
 
-                    <?php the_content(); ?>
+                        <br class="clear">
 
-                    <br class="clear">
-
-                    <?php edit_post_link(); ?>
+                        <?php edit_post_link(); ?>
+                    </div>
 
                     <div class="row">
 
@@ -23,12 +24,12 @@
 
                         $key_values = get_post_custom_values( 'wpcf-column-title' );
                         foreach ( $key_values as $key => $value ) {
-                            echo "<div class='col-sm-4'><b> $value </b></div>";
+                            echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
                         }
 
                         $mykey_values = get_post_custom_values( 'wpcf-column' );
                         foreach ( $mykey_values as $key => $value ) {
-                            echo "<div class='col-sm-4'> $value </div>";
+                            echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
                         }
 
                         ?>
@@ -55,10 +56,13 @@
         </section>
         <!-- /section -->
 
-        <aside class="col-md-2">
+        <aside class="col-md-3 aside-about">
             <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('about-sidebar')) ?>
         </aside>
     </main>
+
+    </div><!-- container -->
+</div><!-- wrapper -->
 
 
 
