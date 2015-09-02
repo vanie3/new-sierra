@@ -151,9 +151,6 @@ function html5blank_styles()
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
 
-    wp_register_style('reset', get_template_directory_uri() . '/slider/css/reset.css', array(), 'all');
-    wp_enqueue_style('reset');
-
     wp_register_style('slider-css', get_template_directory_uri() . '/slider/css/slider.css', array(), 'all');
     wp_enqueue_style('slider-css');
 }

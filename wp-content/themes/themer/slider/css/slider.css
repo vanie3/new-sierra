@@ -189,6 +189,11 @@ Main components
   -o-transform: translateY(-27px) rotate(45deg);
   transform: translateY(-27px) rotate(45deg);
 }
+
+ul.cd-testimonials{
+    padding: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .flex-direction-nav li {
     width: 50px;
