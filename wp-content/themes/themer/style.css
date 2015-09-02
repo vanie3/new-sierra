@@ -190,10 +190,11 @@ a.navbar-brand{
     position: absolute;
     right: 0px;
 }
-
-/*button.navbar-toggle{*/
-    /*float: right;*/
-/*}*/
+.navbar-toggle {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
 
 /* sidebar */
 .sidebar {
@@ -240,16 +241,18 @@ footer.footer p.copyright.container {
     font-weight: bold;
 }
 
+footer .navbar-nav>li {
+    float: none;
+}
+
 ul#menu-left-footer-nav,
 ul#menu-right-footer-nav {
     font-size: 14px;
-    padding: 0px;
 }
 
 ul#menu-left-footer-nav li,
 ul#menu-right-footer-nav li{
     list-style-type: none;
-    padding: 0px;
 }
 
 ul#menu-left-footer-nav li a,
@@ -426,15 +429,15 @@ aside.aside-about ul {
 }
 
 .testimonials {
-    /*position: absolute;*/
-    /*top: 1033px;*/
+    position: relative;
+    top: 100px;
     /*width: 1086px;*/
     margin: 0 auto;
     height: 260px;
 	background-color: #DDE9DD;
     border: 4px solid #ffffff;
-    margin-top: 140px;
-    /*margin-bottom: 200px;*/
+    /*margin-top: 140px;*/
+    margin-bottom: 200px;
 }
 
 .testimonials p {
@@ -664,7 +667,7 @@ a img.aligncenter {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
 }
 
 .wrapper.wrapper-about{
@@ -672,7 +675,7 @@ a img.aligncenter {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
 }
 
 @media (max-width: 1280px){
@@ -683,20 +686,30 @@ a img.aligncenter {
         /*margin-top: 75px;*/
     }
     .testimonials {
-        margin-top: none;
+        margin-top: 0;
     }
     .mid-copy {
-        margin-top: 25%;
+        margin-top: 320px;
     }
 }
 
-@media (max-width: 1280px){
-
+@media (max-width: 765px) {
+    .mid-copy span.facts {
+        font-size: 20px;
+    }
+    .mid-copy span.facts-title {
+        font-size: 25px;
+    }
+    .testimonials p {
+        font-size: 130%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 553px){
     .big-box {
         width: 340px;
+        height: 100%;
     }
     .boxes {
         width: 170px;
@@ -711,6 +724,7 @@ a img.aligncenter {
     }
     .navbar-toggle {
         display: block;
+        top: 95px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -740,5 +754,20 @@ a img.aligncenter {
     }
     .collapsing {
         overflow: hidden!important;
+    }
+    .navbar-collapse.collapse.in {
+        border-top: none;
+        box-shadow: none;
+        position: relative;
+        top: 115px;
+    }
+    .navbar-collapse.collapsing{
+        border-top: none;
+        box-shadow: none;
+        position: relative;
+        top: 115px;
+    }
+    .navbar-collapse a {
+         border-right: none;
     }
 }
