@@ -160,6 +160,7 @@ form button.search-submit{
     display: inline;
     font-size: 1em;
 }
+
 #navmenu a {
     text-decoration:none;
     text-transform: uppercase;
@@ -167,6 +168,10 @@ form button.search-submit{
     color:#ffffff;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+}
+
+#navmenu a:hover {
+    background-color: #548ab7;
 }
 
 .navbar-collapse a{
@@ -394,6 +399,12 @@ aside.aside-about ul {
     transform: translate(-50%, -50%);
     line-height: 42px;
 }
+
+.big-box a:hover {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
 .boxes {
     float: left;
     width: 245px;
