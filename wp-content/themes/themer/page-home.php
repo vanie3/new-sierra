@@ -6,7 +6,7 @@
 <!--			get_permalink ( $id = 4)-->
 
 
-				<div class="container mid-page">
+				<div class="mid-page">
 					<div class="big-box text-center">
 						<div class="row row-boxes">
 							<div class="boxes one">
