@@ -19,24 +19,19 @@
                     </div>
 
                     <div class="row">
-                        <div class="about-columns">
-                            <?php
+                        <?php
 
-                            $key_values = get_post_custom_values( 'wpcf-column-title' );
-                            foreach ( $key_values as $key => $value ) {
-                                echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
-                            }
+                        $key_values = get_post_custom_values( 'wpcf-column-title' );
+                        foreach ( $key_values as $key => $value ) {
+                            echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
+                        }
 
-                            $mykey_values = get_post_custom_values( 'wpcf-column' );
-                            foreach ( $mykey_values as $key => $value ) {
-                                echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
-                            }
+                        $mykey_values = get_post_custom_values( 'wpcf-column' );
+                        foreach ( $mykey_values as $key => $value ) {
+                            echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
+                        }
 
-                            ?>
-                        </div>
-
-
-
+                        ?>
                     </div>
 
                 </article>
