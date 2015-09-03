@@ -2,7 +2,7 @@
 
     <main role="main" class="main-about">
         <!-- section -->
-        <section class="col-md-9 container">
+        <section class="col-sm-9 container">
 
             <h1><?php the_title(); ?></h1>
 
@@ -19,20 +19,23 @@
                     </div>
 
                     <div class="row">
+                        <div class="about-columns">
+                            <?php
 
-                        <?php
+                            $key_values = get_post_custom_values( 'wpcf-column-title' );
+                            foreach ( $key_values as $key => $value ) {
+                                echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
+                            }
 
-                        $key_values = get_post_custom_values( 'wpcf-column-title' );
-                        foreach ( $key_values as $key => $value ) {
-                            echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
-                        }
+                            $mykey_values = get_post_custom_values( 'wpcf-column' );
+                            foreach ( $mykey_values as $key => $value ) {
+                                echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
+                            }
 
-                        $mykey_values = get_post_custom_values( 'wpcf-column' );
-                        foreach ( $mykey_values as $key => $value ) {
-                            echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
-                        }
+                            ?>
+                        </div>
 
-                        ?>
+
 
                     </div>
 
@@ -56,7 +59,7 @@
         </section>
         <!-- /section -->
 
-        <aside class="col-md-3 aside-about">
+        <aside class="hidden-xs col-sm-3 aside-about">
             <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('about-sidebar')) ?>
         </aside>
     </main>
