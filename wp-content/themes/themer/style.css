@@ -188,12 +188,22 @@ a.navbar-brand{
 
 .navbar-toggle{
     position: absolute;
-    right: 0px;
+    right: 0;
 }
 .navbar-toggle {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 10px;
+}
+
+
+.login {
+    float: right;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    padding-top: 3px;
+    padding-left: 20px;
 }
 
 /* sidebar */
