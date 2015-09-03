@@ -18,10 +18,10 @@
                     <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-left-footer')) ?>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 widget-col">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('middle-right-footer')) ?>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 widget-col">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('right-footer')) ?>
                     </div>
                 </div>
