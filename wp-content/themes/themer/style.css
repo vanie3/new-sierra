@@ -204,6 +204,7 @@ a.navbar-brand{
     color: #ffffff;
     padding-top: 3px;
     padding-left: 20px;
+    text-transform: uppercase;
 }
 
 /* sidebar */
