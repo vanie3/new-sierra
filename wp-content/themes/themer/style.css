@@ -136,7 +136,7 @@ form button.search-submit{
 
 /* header nav */
 .nav {
-
+    clear: both;
 }
 
 #navmenu .menu{
