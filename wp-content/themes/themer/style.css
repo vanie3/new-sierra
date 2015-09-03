@@ -218,6 +218,7 @@ footer.footer {
     /*margin-top: 19%;*/
     min-height: 208px;
     width: 100%;
+    padding-bottom: 20px;
     /*margin-top: 344px;*/
 }
 
@@ -351,6 +352,10 @@ main.main-about article .column-content{
     line-height: 1.1;
 }
 
+main .about-columns {
+    padding-bottom: 20px;
+}
+
 aside.aside-about h3{
     color: #03306f;
     text-transform: uppercase;
@@ -421,7 +426,8 @@ aside.aside-about ul {
 .mid-copy {
     /*position: relative;*/
     /*top: 200px;*/
-    margin-top: 445px;
+    /*margin-top: 410px;*/
+    margin-top: 370px;
 }
 
 .mid-copy span.facts {
@@ -456,7 +462,8 @@ aside.aside-about ul {
 
 .testimonials {
     position: relative;
-    top: 45px;
+    /*top: 45px;*/
+    top: 60px;
     /*width: 1086px;*/
     margin: 0 auto;
     height: 260px;
@@ -477,6 +484,7 @@ aside.aside-about ul {
 .testimonials .testimonial-info {
     float: right;
     text-align: right;
+    padding-right: 20px;
 }
 
 .testimonials .testimonial-info span.wpcf-field-author-value{
@@ -790,7 +798,7 @@ a img.aligncenter {
     .navbar-nav>li {
         float: none;
     }
-    .navbar-nav>li>a {
+    nav .navbar-nav>li>a {
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
@@ -830,6 +838,15 @@ a img.aligncenter {
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
         background-color: #0e2440;
+    }
+    main.main-about article p{
+        font-size: 18px;
+    }
+    main.main-about article .column-content{
+        font-size: 15px;
+    }
+    aside.aside-about h3{
+        font-size: 22px;
     }
 }
 
