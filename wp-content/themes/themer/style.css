@@ -141,7 +141,7 @@ form button.search-submit{
 
 #navmenu .menu{
     float: right;
-    margin-top: 17px;
+    margin: 17px 0px;
 }
 
 #navmenu ul {
@@ -293,7 +293,10 @@ main{
 }
 
 main.main-about {
-    margin-top: 218px;
+    /*margin-top: 218px;*/
+         margin-top: 300px;
+    /*position: relative;*/
+    /*top: 230px;*/
 }
 
 main.main-about h1{
@@ -419,7 +422,7 @@ aside.aside-about ul {
 
 .mid-copy span.facts-title{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*font-size: 47px;*/
+    font-size: 47px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 300;
@@ -442,7 +445,7 @@ aside.aside-about ul {
 
 .testimonials {
     position: relative;
-    top: 60px;
+    top: 45px;
     /*width: 1086px;*/
     margin: 0 auto;
     height: 260px;
@@ -694,6 +697,9 @@ a img.aligncenter {
     .wrapper.wrapper-home{
         background-size: auto;
     }
+    .wrapper.wrapper-about{
+        background-size: auto;
+    }
     main .mid-page {
         /*margin-top: 75px;*/
     }
@@ -724,13 +730,30 @@ a img.aligncenter {
 
 @media (max-width: 553px){
     .big-box {
-        width: 340px;
+        width: 343px;
         height: 100%;
+    }
+    .big-box a{
+        font-size: 2.8em;
     }
     .boxes {
         width: 170px;
         height: 160px;
         margin: 0 auto;
+    }
+    .one {
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+    .two {
+        margin-bottom: 3px;
+    }
+    .three {
+        margin-right: 3px;
+    }
+    .mid-copy {
+        position: relative;
+        top: 70px;
     }
 }
 
@@ -759,29 +782,30 @@ a img.aligncenter {
     .navbar-nav>li>a {
         padding-top: 5px;
         padding-bottom: 5px;
+        text-align: center;
     }
     .navbar-text {
         float: none;
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in {
-        display: block!important;
-    }
     .collapsing {
         overflow: hidden!important;
     }
     .navbar-collapse.collapse.in {
+        display: block!important;
         border-top: none;
         box-shadow: none;
         position: relative;
         top: 115px;
+        background-color: #0e2440;
     }
     .navbar-collapse.collapsing{
         border-top: none;
         box-shadow: none;
         position: relative;
         top: 115px;
+        background-color: #0e2440;
     }
     .navbar-collapse a {
          border-right: none;
@@ -800,11 +824,11 @@ a img.aligncenter {
 
 @media (min-width:190px) and (max-width:1200px){
     .testimonials p {
-        font-size: 20px;
+        /*font-size: 20px;*/
         font-family: 'Playfair Display', serif;
         font-style: italic;
         color: #0e2440;
-        padding: 20px;
+        padding: 20px 20px 0px 20px;
     }
 }
 
