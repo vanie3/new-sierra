@@ -42,9 +42,13 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-                <a href="" class="login">Client Login</a>
+                <div class="top-header">
+                    <a href="" class="login">Client Login</a>
 
-                <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+                    <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+                </div>
+
+
 
 					<!-- nav -->
 
