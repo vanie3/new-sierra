@@ -8,9 +8,6 @@
                 }
 
             ?>
-
-
-<!--			<footer class="footer" role="contentinfo">-->
                 <div class="row widgets container">
                     <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>
@@ -29,14 +26,9 @@
 				<!-- copyright -->
 				<p class="copyright container">
 					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
-				</p>
-				<!-- /copyright -->
+				</p> <!-- /copyright -->
 
-			</footer>
-			<!-- /footer -->
-
-<!--		</div>-->
-		<!-- /wrapper -->
+			</footer> <!-- /footer -->
 
 		<?php wp_footer(); ?>
 
