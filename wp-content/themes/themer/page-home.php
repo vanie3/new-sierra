@@ -92,10 +92,7 @@
 					<?php endif; ?>
 
 				</section> <!-- /section -->
-			</main>
-
-			<?php //get_sidebar(); ?>
-
+			</main> <!-- /main -->
 		</div><!-- container -->
 	</div><!-- wrapper -->
 

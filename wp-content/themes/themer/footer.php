@@ -26,13 +26,9 @@
 				<!-- copyright -->
 				<p class="copyright container">
 					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
-				</p>
-				<!-- /copyright -->
+				</p> <!-- /copyright -->
 
-			</footer>
-			<!-- /footer -->
-
-		<!-- /wrapper -->
+			</footer> <!-- /footer -->
 
 		<?php wp_footer(); ?>
 
