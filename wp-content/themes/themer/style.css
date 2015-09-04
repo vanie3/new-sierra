@@ -170,11 +170,11 @@ form button.search-submit{
     font-size: 16px;
 }
 
-#navmenu a:hover {
+#navmenu .navbar-collapse a:hover {
     background-color: #548ab7;
 }
 
-.navbar-collapse a{
+#navmenu .navbar-collapse a{
     border-right: 1px solid #ffffff;
 }
 
@@ -184,6 +184,10 @@ form button.search-submit{
 
 a.navbar-brand{
     border-right: none;
+}
+
+a.navbar-brand:hover{
+    background-color: transparent;
 }
 
 .navbar-default {
@@ -835,8 +839,8 @@ a img.aligncenter {
         top: 115px;
         background-color: #0e2440;
     }
-    .navbar-collapse a {
-         border-right: none;
+    #navmenu .navbar-collapse a{
+        border-right:none;
     }
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;

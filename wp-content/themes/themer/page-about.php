@@ -19,19 +19,30 @@
                     </div>
 
                     <div class="row">
+
                         <?php
 
-                        $key_values = get_post_custom_values( 'wpcf-column-title' );
-                        foreach ( $key_values as $key => $value ) {
-                            echo "<div class='col-sm-4'><b class='column-title'> $value </b></div>";
+                        //this function is used to add the .column-content class to the p tag
+                        function first_paragraph($content){
+                            return preg_replace('/<p([^>]+)?>/', '<p$1 class="column-content">', $content, 1);
                         }
+                        add_filter('the_content', 'first_paragraph');
 
-                        $mykey_values = get_post_custom_values( 'wpcf-column' );
-                        foreach ( $mykey_values as $key => $value ) {
-                            echo "<div class='col-sm-4'><p class='column-content'> $value </p></div>";
-                        }
 
-                        ?>
+                        $args = array( 'post_type' => 'about-column');
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                            <div class="col-md-4">
+                                <b class="column-title">
+                                <?php the_title(); ?>
+                                </b>
+                                <?php the_content(); ?>
+                            </div>
+
+                        <?php endwhile; ?>
+
+
                     </div>
 
                 </article>
