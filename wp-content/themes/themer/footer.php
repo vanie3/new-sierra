@@ -8,9 +8,6 @@
                 }
 
             ?>
-
-
-<!--			<footer class="footer" role="contentinfo">-->
                 <div class="row widgets container">
                     <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>
@@ -35,7 +32,6 @@
 			</footer>
 			<!-- /footer -->
 
-<!--		</div>-->
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>

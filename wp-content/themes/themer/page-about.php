@@ -2,7 +2,7 @@
 
     <main role="main" class="main-about">
         <!-- section -->
-        <section class="col-sm-9 container">
+        <section class="col-sm-9">
 
             <h1><?php the_title(); ?></h1>
 
@@ -45,8 +45,7 @@
 
                     </div>
 
-                </article>
-                <!-- /article -->
+                </article> <!-- /article -->
 
             <?php endwhile; ?>
 
@@ -57,13 +56,11 @@
 
                     <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-                </article>
-                <!-- /article -->
+                </article> <!-- /article -->
 
             <?php endif; ?>
 
-        </section>
-        <!-- /section -->
+        </section> <!-- /section -->
 
         <aside class="hidden-xs col-sm-3 aside-about">
             <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('about-sidebar')) ?>

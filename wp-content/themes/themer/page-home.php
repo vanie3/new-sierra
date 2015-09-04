@@ -2,10 +2,6 @@
 
 			<main role="main">
 
-
-<!--			get_permalink ( $id = 4)-->
-
-
 				<div class="mid-page">
 					<div class="big-box text-center">
 						<div class="row row-boxes">
@@ -37,7 +33,8 @@
 					<div class="slider mid-copy">
 						<div class="cd-testimonials-wrapper cd-container">
 							<ul class="cd-testimonials">
-<!--								foreach post create li and put post inside it-->
+
+							<!-- foreach post create li and put fact post inside it-->
 								<?php
                                 $args = array( 'post_type' => 'fact');
                                 $loop = new WP_Query( $args );
@@ -57,26 +54,6 @@
 
 						</div> <!-- cd-testimonials-wrapper -->
 					</div>
-
-<!--					<div class="mid-copy">-->
-<!--					    <div class="entry-content">-->
-<!--                            --><?php
-//                                $args = array( 'post_type' => 'fact');
-//                                $loop = new WP_Query( $args );
-//                                while ( $loop->have_posts() ) : $loop->the_post();
-//                                    echo '<span class="facts"><span class="facts-title"> ';
-//                                    the_title();
-//                                    echo ': </span>';
-//                                    echo wp_trim_words( get_the_content(), 48, '...' );
-//                                    echo '</span><br>';
-//                                    echo '<button><a href="';
-//                                    the_permalink();
-//                                    echo '" rel="bookmark">Learn More</a></button>';
-//                                    echo '<br>';
-//                                endwhile;
-//                            ?>
-<!--                        </div>-->
-<!--					</div>-->
 				</div>
 
 				<!-- section -->
@@ -89,8 +66,6 @@
 
 							<?php the_content(); ?>
 
-							<!--				--><?php //comments_template( '', true ); // Remove if you don't want comments ?>
-
                             <div class="testimonial-info">
                                 <?php echo types_render_field("author", array("output"=>"html")); ?>
 
@@ -101,8 +76,7 @@
 
 							<?php edit_post_link(); ?>
 
-						</article>
-						<!-- /article -->
+						</article> <!-- /article -->
 
 					<?php endwhile; ?>
 
@@ -113,18 +87,16 @@
 
 							<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-						</article>
-						<!-- /article -->
+						</article> <!-- /article -->
 
 					<?php endif; ?>
 
-				</section>
-				<!-- /section -->
+				</section> <!-- /section -->
 			</main>
 
 			<?php //get_sidebar(); ?>
 
 		</div><!-- container -->
 	</div><!-- wrapper -->
-<!--</div>-->
+
 <?php get_footer(); ?>
