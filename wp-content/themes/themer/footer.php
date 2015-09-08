@@ -1,13 +1,5 @@
 			<!-- footer -->
-            <?php
-
-                if(is_page('home-page')){
-                    echo '<footer class="footer footer-home" role="contentinfo">';
-                } else if(is_page('about-us')){
-                    echo '<footer class="footer footer-about" role="contentinfo">';
-                }
-
-            ?>
+            <footer class="footer">
                 <div class="row widgets container">
                     <div class="col-sm-3">
                         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('left-footer')) ?>

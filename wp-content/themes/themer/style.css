@@ -85,14 +85,14 @@ input[type="text"]{
 /*=====================================
 ============== WRAPPER ================
 =====================================*/
-.wrapper.wrapper-home{
+.page-template-page-home-php .wrapper {
     background-image: url('img/home.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
 
-.wrapper.wrapper-about{
+.page-template-page-about-php .wrapper {
     background-image: url('img/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,11 +231,11 @@ footer.footer {
     padding-bottom: 20px;
 }
 
-footer.footer.footer-home{
-	background-color: #ffffff;
+.page-template-page-home-php footer {
+    background-color: #ffffff;
 }
 
-footer.footer.footer-about{
+.page-template-page-about-php footer {
     background-color: #e6eee4;
 }
 
