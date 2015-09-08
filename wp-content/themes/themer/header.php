@@ -30,9 +30,9 @@
 		<!-- wrapper -->
         <?php
 
-        if(is_page(4)){
+        if(is_page('home-page')){
             echo '<div class="wrapper wrapper-home">';
-        } else if(is_page(6)){
+        } else if(is_page('about-us')){
             echo '<div class="wrapper wrapper-about">';
         }
 

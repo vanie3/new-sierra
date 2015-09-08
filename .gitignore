@@ -15,4 +15,4 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 .idea
 .vagrant
-
+**/.DS_Store

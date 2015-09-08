@@ -1,9 +1,9 @@
 			<!-- footer -->
             <?php
 
-                if(is_page(4)){
+                if(is_page('home-page')){
                     echo '<footer class="footer footer-home" role="contentinfo">';
-                } else if(is_page(6)){
+                } else if(is_page('about-us')){
                     echo '<footer class="footer footer-about" role="contentinfo">';
                 }
 

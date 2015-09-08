@@ -6,24 +6,24 @@
 					<div class="big-box text-center">
 						<div class="row row-boxes">
 							<div class="boxes one">
-							    <a href="<?php echo esc_url( get_permalink(41) ); ?>">
+							    <a href="<?php echo esc_url( get_permalink( get_page_by_path('hr-compliance') ) ); ?>">
 							        <?php esc_html_e( 'HR Compliance', 'textdomain' ); ?>
                                 </a>
                             </div>
 							<div class="boxes two">
-							    <a href="<?php echo esc_url( get_permalink(45) ); ?>">
+							    <a href="<?php echo esc_url( get_permalink( get_page_by_path('background-investigations')) ); ?>">
 							        <?php esc_html_e( 'Background Investigations', 'textdomain' ); ?>
                                 </a>
                             </div>
 						</div>
 						<div class="row row-boxes">
 							<div class="boxes three">
-							    <a href="<?php echo esc_url( get_permalink(43) ); ?>">
+							    <a href="<?php echo esc_url( get_permalink( get_page_by_path('recruitment-screening')) ); ?>">
 							        <?php esc_html_e( 'Recruitment & Screening', 'textdomain' ); ?>
                                 </a>
                             </div>
 							<div class="boxes four">
-							    <a href="<?php echo esc_url( get_permalink(47) ); ?>">
+							    <a href="<?php echo esc_url( get_permalink( get_page_by_path('training-workshops') ) ); ?>">
 							        <?php esc_html_e( 'Training & Workshops', 'textdomain' ); ?>
                                 </a>
                             </div>
