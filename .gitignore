@@ -15,4 +15,6 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 .idea
 .vagrant
+themes/.DS_Store
+themer/.DS_Store
 
