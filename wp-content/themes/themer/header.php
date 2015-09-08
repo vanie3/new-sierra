@@ -28,15 +28,7 @@
 
 
 		<!-- wrapper -->
-        <?php
-
-        if(is_page(4)){
-            echo '<div class="wrapper wrapper-home">';
-        } else if(is_page(6)){
-            echo '<div class="wrapper wrapper-about">';
-        }
-
-        ?>
+       <div class="wrapper">
             <div class="container">
 
 			<!-- header -->
